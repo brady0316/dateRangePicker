@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="" />
+<meta name="Keywords" content="" />
+<title>demo</title>
+<link rel="stylesheet" type="text/css" href="datepicker.css" />
+</head>
+<body>
+<div id="date-select" class="ui-datepicker">
+   <input  name="daterange" id="daterange" readonly>
+</div>
+
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript" src="moment.min.js"></script>
+<script type="text/javascript" src="daterangepicker.js"></script>
+<script type="text/javascript">
+   var daterangepicker = new DateRangePicker();
+   daterangepicker.init({
+   	"ele": $("#daterange"),
+   	"yearOffset": 50,
+   	"pos": "left",
+   	"min_date": "1990-01-01",
+   	"format": "YYYY-MM-DD",
+   	"confirmDateFn": function() {
+   		var selectedDate = self.daterangepicker.getDate();
+   		console.log(selectedDate)
+   	}
+   });
+</script>
+</body>
+</html>
