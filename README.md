@@ -8,6 +8,7 @@
 "format"：日期格式，如YYYY-MM-D;D</br>
 "confirmDateFn"：日期确认回调函数;</br>
 # 使用方法
+```javascript 
 var daterangepicker = new DateRangePicker();
    daterangepicker.init({
    	"ele": $("#daterange"),
@@ -19,4 +20,5 @@ var daterangepicker = new DateRangePicker();
    		var selectedDate = self.daterangepicker.getDate();
    		console.log(selectedDate)
    	}
-});
+})
+```
